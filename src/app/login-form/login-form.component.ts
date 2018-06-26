@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserComponent } from '../user/user.component';
+import { User } from '../user';
 
 @Component({
   selector: 'app-login-form',
@@ -10,7 +10,7 @@ export class LoginFormComponent {
 
   constructor() { }
 
-    model = new UserComponent( 'Tester1',  '12345');
+    model = new User('Tester1', '12345');
 
     submitted = false;
 
